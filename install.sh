@@ -13,6 +13,9 @@ sudo yum install git -y
 #Confirmar version de Git
 git --version
 
+#inicializar docker
+sudo systemctl start docker
+
 #realizar login de docker (cambiar las variables que estan entre <>)
 DOCKER_USERNAME=<tu_nombre_de_usuario_de_Docker_Hub>
 DOCKER_PASSWORD=<tu_contraseña_de_Docker_Hub>
