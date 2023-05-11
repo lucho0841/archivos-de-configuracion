@@ -32,7 +32,7 @@ services:
     ports:
       - "80:80"
     networks:
-pet-plate-red:
+      pet-plate-red:
         ipv4_address: 192.168.1.4
   backend1:
     image: brayanesq/pet-plate-backend:v1.3
