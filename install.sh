@@ -14,10 +14,9 @@ sudo yum install git -y
 git --version
 
 #realizar login de docker (cambiar las variables que estan entre <>)
-sudo docker login
 DOCKER_USERNAME=<tu_nombre_de_usuario_de_Docker_Hub>
 DOCKER_PASSWORD=<tu_contraseña_de_Docker_Hub>
-echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+sudo echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
 #levantamiento contenedores petplate despues de realizar push del front
 sudo docker pull postgres
