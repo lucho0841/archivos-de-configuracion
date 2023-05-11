@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo chmod +x /home/ec2-user/archivos-de-configuracion/docker-compose.yml
 #actualización de repositorios y paquetes
 sudo yum update -y
 
@@ -32,7 +33,6 @@ sudo docker pull brayanesq/pet-plate-chatbot:v1.3
 #Despues de crear y configurar el docker-compose, instalar las dependencias del mismo
 
 sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /home/ec2-user/archivos-de-configuracion/docker-compose.yml
 sudo docker-compose --version
 
 #Inicializar el docker compose
